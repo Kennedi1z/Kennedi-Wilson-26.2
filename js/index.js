@@ -2,8 +2,12 @@
 const footer = document.createElement('footer');
 const today = new Date();
 const thisYear = today.getFullYear();
-footer.textContent = `© ${thisYear} Kennedi Wilson. All rights reserved.`;
-document.body.appendChild(footer); // should give me the footer at the bottom of the webpage//
+const copyright = document.createElement('p');
+const name = "Kennedi Wilson";
+copyright.innerHTML = `&copy; ${name} ${thisYear}`;
+footer.appendChild(copyright);
+document.body.appendChild(footer);
+ // should give me the footer at the bottom of the webpage//
 
 // Skills section //
 const skills = ["HTML", "CSS", "JavaScript", "GitHub", "Debugging"];
