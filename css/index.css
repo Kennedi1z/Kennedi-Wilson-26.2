@@ -120,3 +120,21 @@ section {
     height: 100%;
 }
 
+#Leave\ Message form input, #Leave\ Message form textarea, #Leave\ Message form button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(3, 3, 73);
+    border-radius: 5px;
+} 
+
+#Leave\ Message form button {
+    background-color: rgb(3, 3, 73);
+    color: white;
+    cursor: pointer;
+}
+
+#Leave\ Message form button:hover,#Leave\ Message form input:focus,#Leave\ Message form textarea:focus {
+    border-color: #f46cd2;
+}
