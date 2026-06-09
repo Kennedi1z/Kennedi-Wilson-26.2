@@ -138,3 +138,8 @@ section {
 #leave-message form button:hover,#leave-message form input:focus,#leave-message form textarea:focus {
     border-color: #f46cd2;
 }
+
+@media (max-width: 600px) {#leave-message form input,#leave-message form textarea,#leave-message form button {
+        max-width: 100%;
+    }
+}
