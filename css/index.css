@@ -143,3 +143,13 @@ section {
         max-width: 100%;
     }
 }
+
+#Projects {
+    background-color: rgb(235, 244, 244);
+    border: 5px solid rgb(3, 3, 73);
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    gap: 15px;
+    height: 100%;
+}

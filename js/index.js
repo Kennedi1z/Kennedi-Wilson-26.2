@@ -1,3 +1,4 @@
+
 // created copywright footer//
 const footer = document.createElement('footer');
 const today = new Date();
@@ -49,8 +50,29 @@ messageForm.addEventListener('submit', function(event) {
     messageList.appendChild(newMessage);
     messageForm.reset();
 
+ });
 
+
+fetch('https://api.github.com/users/Kennedi1z/repos')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (repositories) {
+        const projectSection = document.getElementById('#Projects');
+        const projectList = projectSection.querySelector('ul');
+        for (let i = 0; i < repositories.length; i++) {
+
+            let project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
     });
 
 
 
+
+
+    
