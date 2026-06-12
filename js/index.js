@@ -58,7 +58,8 @@ fetch('https://api.github.com/users/Kennedi1z/repos')
         return response.json();
     })
     .then(function (repositories) {
-        const projectSection = document.getElementById('#Projects');
+        console.log(repositories);
+        const projectSection = document.getElementById('Projects');
         const projectList = projectSection.querySelector('ul');
         for (let i = 0; i < repositories.length; i++) {
 
@@ -69,6 +70,10 @@ fetch('https://api.github.com/users/Kennedi1z/repos')
     })
     .catch(function (error) {
         console.log(error);
+        const projectSection = document.getElementById('Projects');
+        const errorMessage = document.createElement('p');
+        errorMessage.innerText = 'Error loading projects.';
+        projectSection.appendChild(errorMessage);
     });
 
 
