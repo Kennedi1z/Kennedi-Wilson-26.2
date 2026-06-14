@@ -52,7 +52,7 @@ messageForm.addEventListener('submit', function(event) {
 
  });
 
-
+// Fetch projects from GitHub//
 fetch('https://api.github.com/users/Kennedi1z/repos')
     .then(function (response) {
         return response.json();
@@ -68,6 +68,8 @@ fetch('https://api.github.com/users/Kennedi1z/repos')
             projectList.appendChild(project);
         }
     })
+
+// Handle errors//
     .catch(function (error) {
         console.log(error);
         const projectSection = document.getElementById('Projects');
