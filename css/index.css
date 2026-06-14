@@ -110,7 +110,7 @@ section {
     height: 100%;
 }
 
-#Leave\ Message {
+#leave-message {
     background-color: rgb(235, 244, 244);
     border: 5px solid rgb(3, 3, 73);
     display: flex;
@@ -120,3 +120,26 @@ section {
     height: 100%;
 }
 
+#leave-message form input, #leave-message form textarea, #leave-message form button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(3, 3, 73);
+    border-radius: 5px;
+} 
+
+#leave-message form button {
+    background-color: rgb(3, 3, 73);
+    color: white;
+    cursor: pointer;
+}
+
+#leave-message form button:hover,#leave-message form input:focus,#leave-message form textarea:focus {
+    border-color: #f46cd2;
+}
+
+@media (max-width: 600px) {#leave-message form input,#leave-message form textarea,#leave-message form button {
+        max-width: 100%;
+    }
+}
