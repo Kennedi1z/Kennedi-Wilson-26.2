@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(35, 233, 127);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: rgb(6, 1, 24);
+    font-size: 60px;
+    text-align: center;
+
+}
+
+p {
+    color: rgb(6, 1, 24);
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(6, 1, 24);
+    color: white;
+    border: 1px solid rgb(6, 1, 24);
+    border-radius: 4px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    display: center;
+    margin-left: 640px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav {
+    background-color: rgb(147, 193, 222);
+    padding: 10px;
+    text-align: center;
+}
