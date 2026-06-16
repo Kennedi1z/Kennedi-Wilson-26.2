@@ -2,6 +2,8 @@ const tempButton = document.getElementById("temperature");
 const conditions = document.getElementById("weather-conditions");
 const output = document.getElementById("output");
 
+
+// Get the current temperature//
 tempButton.addEventListener("click", () => {
     fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m&timezone=auto&wind_speed_unit=mph&temperature_unit=fahrenheit&precipitation_unit=inch")
         .then((response) => response.json())    
@@ -10,6 +12,7 @@ tempButton.addEventListener("click", () => {
         });
 }); 
 
+// Get the weather conditions//
 function getWeather(code) {
     const describe = {
         0: "Clear sky",
@@ -42,7 +45,7 @@ function getWeather(code) {
 }
 
 
-
+// Get the weather conditions//
 conditions.addEventListener("click", () => {
     fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=weather_code&timezone=auto&wind_speed_unit=mph&temperature_unit=fahrenheit&precipitation_unit=inch")
         .then((response) => response.json())
